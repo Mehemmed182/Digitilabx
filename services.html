@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services — DigitilabX</title>
+  <meta name="description" content="Explore DigitilabX's full range of digital services: AI systems, web design, graphic design, social media, branding, video production, marketing, and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://digitilabx.com/services.html">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    .services-full-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 900px) { .services-full-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 560px) { .services-full-grid { grid-template-columns: 1fr; } }
+
+    .svc-full-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .svc-full-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+    .svc-full-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 8px 32px rgba(201,168,76,0.08); }
+    .svc-full-card:hover::before { opacity: 1; }
+
+    .svc-full-icon {
+      width: 56px; height: 56px;
+      background: var(--gold-subtle);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+    }
+    .svc-includes {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .svc-includes li {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      padding: 4px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .svc-includes li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+    .quote-note {
+      background: var(--gold-subtle);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-sm);
+      padding: 6px 12px;
+      font-size: 0.78rem;
+      color: var(--gold);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<header id="navbar" role="banner"></header>
+
+<main class="page-wrapper">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-labelledby="services-hero-title">
+    <div class="container">
+      <div class="page-hero-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Services
+      </div>
+      <h1 id="services-hero-title">
+        Digital Services for <span class="gradient-text">Every Goal</span>
+      </h1>
+      <p>From AI systems to graphic design, website development to video production — professional digital services tailored to individuals and businesses of all sizes.</p>
+      <div style="margin-top:28px;">
+        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="svc_request">Request a Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES CATALOG -->
+  <section class="section" aria-label="Services catalog">
+    <div class="container">
+
+      <!-- Section: Core Services -->
+      <div class="section-header reveal">
+        <div class="section-label"><span>Core Services</span></div>
+        <h2 class="section-title">What We <span class="gradient-text">Offer</span></h2>
+        <p class="section-subtitle">Each service is designed to deliver clear value. Prices are available on request — we provide transparent, custom quotes for every project.</p>
+      </div>
+
+      <div class="services-full-grid">
+
+        <!-- 1. English & AI Lessons -->
+        <div class="svc-full-card reveal reveal-delay-1" id="english-lessons">
+          <div class="svc-full-icon">📚</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;" data-i18n="svc_english_title">English Language & AI Lessons</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">AI-assisted English learning resources for individuals and groups.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>AI-assisted vocabulary & grammar practice</li>
+            <li>Conversation practice materials</li>
+            <li>Educational worksheets & exercises</li>
+            <li>Digital learning materials</li>
+            <li>Personalized resource planning</li>
+          </ul>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="services/english-lessons.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+        <!-- 2. AI Systems -->
+        <div class="svc-full-card reveal reveal-delay-2" id="ai-systems">
+          <div class="svc-full-icon">🤖</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;" data-i18n="svc_ai_title">AI Systems Development</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">Custom AI solutions and workflow automation for businesses.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>AI assistant planning & development</li>
+            <li>Business workflow automation</li>
+            <li>AI-powered customer support concepts</li>
+            <li>AI chatbot development</li>
+            <li>Custom AI system planning</li>
+            <li>Business productivity solutions</li>
+          </ul>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="services/ai-systems.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+        <!-- 3. Web Design -->
+        <div class="svc-full-card reveal reveal-delay-3" id="web-design">
+          <div class="svc-full-icon">🌐</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;" data-i18n="svc_web_title">Website Design & Development</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">Professional websites for businesses, portfolios, and e-commerce.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Business & portfolio websites</li>
+            <li>Landing pages & service websites</li>
+            <li>E-commerce development</li>
+            <li>Responsive & mobile-first design</li>
+            <li>SEO foundations</li>
+            <li>Website maintenance & support</li>
+          </ul>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="services/web-design.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+        <!-- 4. Mobile App -->
+        <div class="svc-full-card reveal reveal-delay-1" id="mobile-app">
+          <div class="svc-full-icon">📱</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;" data-i18n="svc_mobile_title">Mobile Application Development</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">Application concepts, UI design, and prototype development.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Android & iOS app concepts</li>
+            <li>Application interface design</li>
+            <li>User experience planning</li>
+            <li>Prototype development</li>
+            <li>Business application concepts</li>
+          </ul>
+          <p style="font-size:0.78rem;color:var(--text-muted);font-style:italic;">Note: Final scope depends on project requirements and technical integrations.</p>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="services/mobile-app.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+        <!-- 5. Social Media -->
+        <div class="svc-full-card reveal reveal-delay-2" id="social-media">
+          <div class="svc-full-icon">📣</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;" data-i18n="svc_social_title">Social Media Management</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">Full social media setup, management, and content creation.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Instagram, Facebook, TikTok, LinkedIn setup</li>
+            <li>Profile optimisation</li>
+            <li>Content planning & calendars</li>
+            <li>Post & Reels creation</li>
+            <li>Social media branding</li>
+          </ul>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="services/social-media.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+        <!-- 6. Graphic Design -->
+        <div class="svc-full-card reveal reveal-delay-3" id="graphic-design">
+          <div class="svc-full-icon">🎨</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;" data-i18n="svc_graphic_title">Graphic Design</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">Visual content for digital and print — from social posts to brochures.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Social media post & ad design</li>
+            <li>Promotional banners & posters</li>
+            <li>Flyers, brochures & menus</li>
+            <li>Invitations & stationery</li>
+            <li>Business presentations</li>
+            <li>Infographics</li>
+          </ul>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="services/graphic-design.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+        <!-- 7. AI Video -->
+        <div class="svc-full-card reveal reveal-delay-1" id="ai-video">
+          <div class="svc-full-icon">🎬</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;" data-i18n="svc_video_title">AI-Generated Video Production</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">AI-assisted video content for advertising, social media, and education.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>AI-assisted advertising videos</li>
+            <li>Promotional & social media videos</li>
+            <li>Reels & short-form video concepts</li>
+            <li>Animated advertisements</li>
+            <li>Educational & storytelling videos</li>
+          </ul>
+          <p style="font-size:0.78rem;color:var(--text-muted);font-style:italic;">Note: Output depends on available AI tools and their usage limits.</p>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="services/ai-video.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+        <!-- 8. Marketing -->
+        <div class="svc-full-card reveal reveal-delay-2" id="marketing">
+          <div class="svc-full-icon">📊</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;" data-i18n="svc_marketing_title">Advertising & Marketing Strategies</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">Strategic digital marketing planning and campaign development.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Digital marketing strategy</li>
+            <li>Campaign planning & content</li>
+            <li>Audience research</li>
+            <li>Brand positioning</li>
+            <li>Content marketing planning</li>
+            <li>Social media growth strategies</li>
+          </ul>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="services/marketing.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+        <!-- 9. Branding -->
+        <div class="svc-full-card reveal reveal-delay-3" id="branding">
+          <div class="svc-full-icon">✨</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;" data-i18n="svc_branding_title">Branding & Visual Identity</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">Complete visual identity from logo to brand guidelines.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Logo design</li>
+            <li>Brand identity development</li>
+            <li>Color palettes & typography</li>
+            <li>Brand guidelines document</li>
+            <li>Business stationery</li>
+            <li>Digital brand assets</li>
+          </ul>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="services/branding.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+        <!-- 10. Business Card -->
+        <div class="svc-full-card reveal reveal-delay-1" id="business-card">
+          <div class="svc-full-icon">🪪</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;" data-i18n="svc_bizcard_title">Business Card Design</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">Professional print-ready and digital business card design.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Professional & personal layouts</li>
+            <li>Corporate card design</li>
+            <li>Digital business card concepts</li>
+            <li>Print-ready design files</li>
+            <li>QR code integration</li>
+          </ul>
+          <p style="font-size:0.78rem;color:var(--text-muted);font-style:italic;">Note: Printing and delivery are listed separately and may involve additional costs.</p>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+        <!-- 11. Presentation Design -->
+        <div class="svc-full-card reveal reveal-delay-2" id="presentation">
+          <div class="svc-full-icon">📋</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;" data-i18n="svc_presentation_title">Presentation Design</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">Impactful slide decks and business presentations.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Business & project proposals</li>
+            <li>Startup pitch decks</li>
+            <li>Investor presentations</li>
+            <li>Corporate & educational presentations</li>
+            <li>Training materials</li>
+            <li>Infographics & visual explanations</li>
+          </ul>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="services/presentation.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+        <!-- 12. SEO -->
+        <div class="svc-full-card reveal reveal-delay-3" id="seo">
+          <div class="svc-full-icon">🔍</div>
+          <div>
+            <h2 style="font-size:1.05rem;margin-bottom:8px;">SEO & Website Optimisation</h2>
+            <p style="font-size:0.875rem;color:var(--text-secondary);">Improve your search visibility with technical and on-page SEO.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>On-page SEO implementation</li>
+            <li>Metadata optimisation</li>
+            <li>Image alt text & structure</li>
+            <li>Content organisation</li>
+            <li>Website speed recommendations</li>
+          </ul>
+          <div class="quote-note">📋 Request a Quote</div>
+          <div class="flex gap-sm" style="flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-outline btn-sm" data-i18n="svc_learn_more">Learn More</a>
+            <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="svc_request">Request</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Service Process -->
+      <div class="separator"></div>
+      <div class="section-header reveal" style="margin-top:40px;">
+        <div class="section-label"><span>How It Works</span></div>
+        <h2 class="section-title">The Service <span class="gradient-text">Process</span></h2>
+      </div>
+      <div class="grid-4 reveal" style="grid-template-columns:repeat(4,1fr);">
+        <div style="text-align:center;padding:20px;">
+          <div style="font-size:2rem;margin-bottom:12px;">💬</div>
+          <div style="font-weight:700;margin-bottom:8px;color:var(--gold);">1. Enquiry</div>
+          <p style="font-size:0.85rem;color:var(--text-secondary);">Contact us via WhatsApp or the contact form to describe your project and requirements.</p>
+        </div>
+        <div style="text-align:center;padding:20px;">
+          <div style="font-size:2rem;margin-bottom:12px;">📋</div>
+          <div style="font-weight:700;margin-bottom:8px;color:var(--gold);">2. Brief & Quote</div>
+          <p style="font-size:0.85rem;color:var(--text-secondary);">We review your requirements and provide a clear, honest quote with no hidden costs.</p>
+        </div>
+        <div style="text-align:center;padding:20px;">
+          <div style="font-size:2rem;margin-bottom:12px;">⚙️</div>
+          <div style="font-weight:700;margin-bottom:8px;color:var(--gold);">3. Execution</div>
+          <p style="font-size:0.85rem;color:var(--text-secondary);">We work on your project, keeping you informed throughout the process.</p>
+        </div>
+        <div style="text-align:center;padding:20px;">
+          <div style="font-size:2rem;margin-bottom:12px;">✅</div>
+          <div style="font-weight:700;margin-bottom:8px;color:var(--gold);">4. Delivery</div>
+          <p style="font-size:0.85rem;color:var(--text-secondary);">Final deliverables provided with a review period and any agreed revisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <h2 style="margin-bottom:16px;" data-i18n="cta_title">Have a Project in Mind?</h2>
+        <p style="color:var(--text-secondary);max-width:500px;margin:0 auto;" data-i18n="cta_subtitle">
+          Let's explore how digital tools and creative solutions can support your goals.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="cta_btn_contact">Contact DigitilabX</a>
+          <a href="https://wa.me/994513450359" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp: 051 345 03 59
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<div id="footer"></div>
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
